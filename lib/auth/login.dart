@@ -46,7 +46,9 @@ class _LoginState extends State<Login> {
                     children: [
                       Text("if you havan't account  "),
                       InkWell(
-                        onTap: () {},
+                        onTap: () {
+                          Navigator.of(context).pushNamed("signup");
+                        },
                         child: Text(
                           "click here",
                           style: TextStyle(color: Colors.blue),
